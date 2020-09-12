@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  rootDir: '../',
+  rootDir: './',
   transform: {
     '^.+\\.js?$': '<rootDir>/jest/jest-preprocess.js'
   },
