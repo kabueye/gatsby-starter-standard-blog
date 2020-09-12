@@ -10,6 +10,7 @@ const Page = ({ title, children }: Props) => {
   const pageRef = useRef();
 
   useEffect(() => {
+    // Don't skip Header
     // pageRef.current.scrollIntoView();
   });
 
