@@ -501,7 +501,7 @@ declare module "@material-ui/core/withMobileDialog/withMobileDialog" {
     }
   ) => <Props: {}, WrappedComponent: React$ComponentType<Props>>(
     Component: WrappedComponent
-  ) => React$ComponentType<$Diff<React$ElementConfig<$Supertype<WrappedComponent>>, WithMobileDialog>>;
+  ) => React$ComponentType<$Diff<React$ElementConfig<WrappedComponent>, WithMobileDialog>>;
 }
 
 declare module "@material-ui/core/Dialog" {
@@ -2352,7 +2352,7 @@ declare module "@material-ui/core/styles/withStyles" {
     options?: WithStylesOptions,
   ) => <WrappedComponent: ComponentType<*>>(
     Component: WrappedComponent
-  ) => ComponentType<$Diff<ElementConfig<$Supertype<WrappedComponent>>, WithStylesHOC>>;
+  ) => ComponentType<$Diff<ElementConfig<WrappedComponent>, WithStylesHOC>>;
 }
 
 declare module "@material-ui/core/styles/withTheme" {
@@ -2372,7 +2372,7 @@ declare module "@material-ui/core/styles/withTheme" {
 
   declare module.exports: () => <Props: {}, WrappedComponent: ComponentType<Props>>(
     Component: WrappedComponent
-  ) => ComponentType<$Diff<ElementConfig<$Supertype<WrappedComponent>>, WithThemeHOC>>;
+  ) => ComponentType<$Diff<ElementConfig<WrappedComponent>, WithThemeHOC>>;
 }
 
 declare module "@material-ui/core/styles/zIndex" {
@@ -3120,7 +3120,7 @@ declare module "@material-ui/core/withWidth/withWidth" {
     Component: ComponentType<Props>
   ) => <Props: {}, WrappedComponent: React$ComponentType<Props>>(
     Component: WrappedComponent
-  ) => React$ComponentType<$Diff<React$ElementConfig<$Supertype<WrappedComponent>>,WithWidth>>;
+  ) => React$ComponentType<$Diff<React$ElementConfig<WrappedComponent>,WithWidth>>;
 }
 
 declare module "@material-ui/core/colors" {
