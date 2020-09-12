@@ -1,0 +1,15 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.drawer {
+  display: block;
+  &__icon {
+    color: $color-white;
+  }
+}
+
+@include breakpoint-sm {
+  .drawer {
+    display: none;
+  }
+}

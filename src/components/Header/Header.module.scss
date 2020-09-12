@@ -1,0 +1,11 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.header {
+    &__title {
+        font-size: $typographic-base-font-size * 2;
+        color: $color-white;
+        margin-right: auto;
+        font-weight: 600;
+    }
+}

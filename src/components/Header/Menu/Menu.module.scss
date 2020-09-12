@@ -1,0 +1,16 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.menu {
+  display: none;
+}
+
+@include breakpoint-sm {
+  .menu {
+    display: block;
+    &__link {
+      color: $color-white;
+      padding: 0px 0px 0px 16px;
+    }
+  }
+}

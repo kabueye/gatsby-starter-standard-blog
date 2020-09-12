@@ -1,9 +1,14 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
+import { ThemeProvider } from '@material-ui/styles';
+
 import Layout from '../components/Layout';
+import Header from '../components/Header';
+import Page from '../components/Page';
 import Post from '../components/Post';
-import { useSiteMetadata } from '../hooks';
+import Sidebar from '../components/Sidebar';
+import { useSiteMetadata, useTheme } from '../hooks';
 import type { MarkdownRemark } from '../types';
 
 type Props = {
@@ -14,15 +19,22 @@ type Props = {
 
 const PostTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { theme } = useTheme();
   const { frontmatter } = data.markdownRemark;
   const { title: postTitle, description: postDescription, socialImage } = frontmatter;
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
   const socialImageUrl = typeof socialImage !== 'undefined' ? socialImage['publicURL'] : undefined;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-      <Post post={data.markdownRemark} />
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
+        <Header />
+        <Page>
+          <Post post={data.markdownRemark} />
+        </Page>
+        <Sidebar />
+      </Layout>
+    </ThemeProvider>
   );
 };
 

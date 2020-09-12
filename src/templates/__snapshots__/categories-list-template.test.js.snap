@@ -4,6 +4,118 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
 <div
   className="layout"
 >
+  <header
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorPrimary MuiPaper-elevation4"
+  >
+    <div
+      className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <a
+        className="header__title"
+        href="/"
+      >
+        Test title
+      </a>
+      <nav
+        className="menu"
+      >
+        <a
+          className="menu__link"
+          href="/test/1/"
+        >
+          Test label 1
+        </a>
+        <a
+          className="menu__link"
+          href="/test/2/"
+        >
+          Test label 2
+        </a>
+        <a
+          className="menu__link"
+          href="/test/3/"
+        >
+          Test label 3
+        </a>
+      </nav>
+      <nav
+        className="drawer"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root drawer__icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+          </span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div
+    className="page"
+  >
+    <div
+      className="page__inner"
+    >
+      <h1
+        className="page__title"
+      >
+        Categories
+      </h1>
+      <div
+        className="page__body"
+      >
+        <ul>
+          <li>
+            <a
+              href="/category/test-0/"
+            >
+              test_0
+               (
+              1
+              )
+            </a>
+          </li>
+          <li>
+            <a
+              href="/category/test-1/"
+            >
+              test_1
+               (
+              2
+              )
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div
     className="sidebar"
   >
@@ -222,45 +334,6 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
         className="copyright"
       >
         Test copyright
-      </div>
-    </div>
-  </div>
-  <div
-    className="page"
-  >
-    <div
-      className="page__inner"
-    >
-      <h1
-        className="page__title"
-      >
-        Categories
-      </h1>
-      <div
-        className="page__body"
-      >
-        <ul>
-          <li>
-            <a
-              href="/category/test-0/"
-            >
-              test_0
-               (
-              1
-              )
-            </a>
-          </li>
-          <li>
-            <a
-              href="/category/test-1/"
-            >
-              test_1
-               (
-              2
-              )
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

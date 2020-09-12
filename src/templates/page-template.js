@@ -1,10 +1,13 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
+import { ThemeProvider } from '@material-ui/styles';
+
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
-import { useSiteMetadata } from '../hooks';
+import { useSiteMetadata, useTheme } from '../hooks';
 import type { MarkdownRemark } from '../types';
 
 type Props = {
@@ -15,6 +18,7 @@ type Props = {
 
 const PageTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { theme } = useTheme();
   const { html: pageBody } = data.markdownRemark;
   const { frontmatter } = data.markdownRemark;
   const { title: pageTitle, description: pageDescription, socialImage } = frontmatter;
@@ -22,12 +26,15 @@ const PageTemplate = ({ data }: Props) => {
   const socialImageUrl = typeof socialImage !== 'undefined' ? socialImage['publicURL'] : undefined;
 
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-      <Sidebar />
-      <Page title={pageTitle}>
-        <div dangerouslySetInnerHTML={{ __html: pageBody }} />
-      </Page>
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
+        <Header />
+        <Page title={pageTitle}>
+          <div dangerouslySetInnerHTML={{ __html: pageBody }} />
+        </Page>
+        <Sidebar />
+      </Layout>
+    </ThemeProvider>
   );
 };
 
