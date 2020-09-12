@@ -295,6 +295,41 @@ exports[`CategoryTemplate renders correctly 1`] = `
         </ul>
       </nav>
       <div
+        className="categories"
+      >
+        <div
+          className="categories__inner"
+        >
+          <div
+            className="categories__title"
+          >
+            Categories
+          </div>
+          <ul>
+            <li>
+              <a
+                href="/category/test-0/"
+              >
+                test_0
+                 (
+                1
+                )
+              </a>
+            </li>
+            <li>
+              <a
+                href="/category/test-1/"
+              >
+                test_1
+                 (
+                2
+                )
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
         className="contacts"
       >
         <ul

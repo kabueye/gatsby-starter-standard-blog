@@ -9,12 +9,17 @@ import pageContext from '../../jest/__fixtures__/page-context';
 import type { RenderCallback } from '../types';
 
 describe('TagTemplate', () => {
+  const mockProps = {
+    ...siteMetadata,
+    ...allMarkdownRemark
+  };
+
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
       ({ render }: RenderCallback) => (
-        render(siteMetadata)
+        render(mockProps)
       ),
-      useStaticQuery.mockReturnValue(siteMetadata)
+      useStaticQuery.mockReturnValue(mockProps)
     );
   });
 
