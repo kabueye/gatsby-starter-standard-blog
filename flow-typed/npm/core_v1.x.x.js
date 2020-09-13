@@ -2230,6 +2230,12 @@ declare module "@material-ui/core/styles/MuiThemeProvider" {
   declare module.exports: ComponentType<Object>;
 }
 
+declare module "@material-ui/core/styles/ThemeProvider" {
+  import type {ComponentType} from "react";
+
+  declare module.exports: ComponentType<Object>;
+}
+
 declare module "@material-ui/core/styles/shadows" {
   declare export type Shadows = string[];
 
@@ -2401,6 +2407,7 @@ declare module "@material-ui/core/styles" {
 
   declare module.exports: {
     MuiThemeProvider: $Exports<"@material-ui/core/styles/MuiThemeProvider">,
+    ThemeProvider: $Exports<"@material-ui/core/styles/ThemeProvider">,
     withStyles: $Exports<"@material-ui/core/styles/withStyles">,
     withTheme: $Exports<"@material-ui/core/styles/withTheme">,
     createGenerateClassName: $Exports<"@material-ui/core/styles/createGenerateClassName">,
@@ -3782,6 +3789,9 @@ declare module "@material-ui/core/styles/index.js" {
 declare module "@material-ui/core/styles/MuiThemeProvider.js" {
   declare module.exports: $Exports<"@material-ui/core/styles/MuiThemeProvider">;
 }
+declare module "@material-ui/core/styles/ThemeProvider.js" {
+  declare module.exports: $Exports<"@material-ui/core/styles/ThemeProvider">;
+}
 declare module "@material-ui/core/styles/shadows.js" {
   declare module.exports: $Exports<"@material-ui/core/styles/shadows">;
 }
@@ -4190,6 +4200,9 @@ declare module "@material-ui/core" {
   >;
   declare export var MuiThemeProvider: $Exports<
     "@material-ui/core/styles/MuiThemeProvider"
+  >;
+  declare export var ThemeProvider: $Exports<
+    "@material-ui/core/styles/ThemeProvider"
   >;
   declare export var withStyles: $Exports<
     "@material-ui/core/styles/withStyles"

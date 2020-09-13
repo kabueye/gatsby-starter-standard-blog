@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
-import { ThemeProvider } from '@material-ui/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';

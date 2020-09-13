@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
-import { ThemeProvider } from '@material-ui/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 
 import kebabCase from 'lodash/kebabCase';
 import Header from '../components/Header';
