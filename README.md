@@ -11,6 +11,7 @@
 </p>
 
 ## Table of contents
++ [Demo](https://github.com/kabueye/gatsby-starter-standard-blog#demo)
 + [Features](https://github.com/kabueye/gatsby-starter-standard-blog#features)
 + [Quick Start](https://github.com/kabueye/gatsby-starter-standard-blog#quick-start)
 + [Deploy with Netlify](https://github.com/kabueye/gatsby-starter-standard-blog#deploy-with-netlify)
@@ -20,6 +21,9 @@
 
 <!-- + [Contributors](https://github.com/kabueye/gatsby-starter-standard-blog#contributors) -->
 <!-- + [Web Performance Tests](https://github.com/kabueye/gatsby-starter-standard-blog#web-performance-tests) -->
+
+## Demo
+<a target="_blank" href="https://gatsby-starter-standard-blog.netlify.app">https://gatsby-starter-standard-blog.netlify.app</a>
 
 ## Features
 + [Lost Grid](http://lostgrid.org).
