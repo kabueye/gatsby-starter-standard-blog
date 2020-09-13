@@ -12,13 +12,14 @@
 
 ## Table of contents
 + [Features](https://github.com/kabueye/gatsby-starter-standard-blog#features)
-<!-- + [Web Performance Tests](https://github.com/kabueye/gatsby-starter-standard-blog#web-performance-tests) -->
 + [Quick Start](https://github.com/kabueye/gatsby-starter-standard-blog#quick-start)
 + [Deploy with Netlify](https://github.com/kabueye/gatsby-starter-standard-blog#deploy-with-netlify)
 + [Folder Structure](https://github.com/kabueye/gatsby-starter-standard-blog#folder-structure)
 + [Sponsors](https://github.com/kabueye/gatsby-starter-standard-blog#sponsors)
-<!-- + [Contributors](https://github.com/kabueye/gatsby-starter-standard-blog#contributors) -->
 + [License](https://github.com/kabueye/gatsby-starter-standard-blog#license)
+
+<!-- + [Contributors](https://github.com/kabueye/gatsby-starter-standard-blog#contributors) -->
+<!-- + [Web Performance Tests](https://github.com/kabueye/gatsby-starter-standard-blog#web-performance-tests) -->
 
 ## Features
 + [Lost Grid](http://lostgrid.org).
