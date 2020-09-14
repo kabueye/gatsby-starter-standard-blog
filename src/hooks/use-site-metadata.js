@@ -39,6 +39,8 @@ const useSiteMetadata = () => {
             subtitle
             copyright
             disqusShortname
+            labelReadMore
+            labelPublished
           }
         }
       }

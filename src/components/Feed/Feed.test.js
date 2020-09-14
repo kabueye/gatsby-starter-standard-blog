@@ -1,9 +1,25 @@
 // @flow strict
 import React from 'react';
+import { useStaticQuery, StaticQuery } from 'gatsby';
 import renderer from 'react-test-renderer';
 import Feed from './Feed';
+import siteMetadata from '../../../jest/__fixtures__/site-metadata';
+import type { RenderCallback } from '../../types';
 
 describe('Feed', () => {
+  const mockProps = {
+    ...siteMetadata,
+  };
+
+  beforeEach(() => {
+    StaticQuery.mockImplementationOnce(
+      ({ render }: RenderCallback) => (
+        render(mockProps)
+      ),
+      useStaticQuery.mockReturnValue(mockProps)
+    );
+  });
+
   const props = {
     edges: [
       {

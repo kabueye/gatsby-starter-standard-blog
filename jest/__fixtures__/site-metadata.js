@@ -35,7 +35,9 @@ module.exports = {
           rss: '#',
           vkontakte: '#'
         }
-      }
+      },
+      labelReadMore: 'Read More',
+      labelPublished: 'Published on'
     }
   }
 };

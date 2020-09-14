@@ -46,5 +46,7 @@ module.exports = {
       soundcloud: '',
       medium: '',
     }
-  }
+  },
+  labelReadMore: 'Read More',
+  labelPublished: 'Published on'
 };

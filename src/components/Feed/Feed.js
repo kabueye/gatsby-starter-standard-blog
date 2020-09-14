@@ -4,12 +4,16 @@ import moment from 'moment';
 import { Link } from 'gatsby';
 import type { Edges } from '../../types';
 import styles from './Feed.module.scss';
+import { useSiteMetadata } from '../../hooks';
 
 type Props = {
   edges: Edges
 };
 
-const Feed = ({ edges }: Props) => (
+const Feed = ({ edges }: Props) => {
+  const { labelReadMore } = useSiteMetadata();
+
+  return (
   <div className={styles['feed']}>
     {edges.map((edge) => (
       <div className={styles['feed__item']} key={edge.node.fields.slug}>
@@ -26,10 +30,11 @@ const Feed = ({ edges }: Props) => (
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
+        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>{labelReadMore}</Link>
       </div>
     ))}
   </div>
-);
+  );
+};
 
 export default Feed;

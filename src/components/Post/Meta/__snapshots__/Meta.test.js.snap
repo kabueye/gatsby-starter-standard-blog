@@ -7,7 +7,8 @@ exports[`Meta renders correctly 1`] = `
   <p
     className="meta__date"
   >
-    Published 
+    Published on
+     
     1 Sep 2016
   </p>
 </div>

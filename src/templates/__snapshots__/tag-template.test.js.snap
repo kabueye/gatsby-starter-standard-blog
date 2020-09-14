@@ -139,7 +139,7 @@ exports[`TagTemplate renders correctly 1`] = `
               className="feed__item-readmore"
               href="/test_0"
             >
-              Read
+              Read More
             </a>
           </div>
           <div
@@ -187,7 +187,7 @@ exports[`TagTemplate renders correctly 1`] = `
               className="feed__item-readmore"
               href="/test_1"
             >
-              Read
+              Read More
             </a>
           </div>
         </div>
