@@ -2,8 +2,12 @@
     gatsby-starter-standard-blog
 </h1>
 
-<h4 align="center">
+<h3 align="center">
   A gatsby-starter for creating standard blog.
+</h3>
+
+<h4 align="center">
+  This is a fork of <a href="https://github.com/alxshelepenok/gatsby-starter-lumen">gatsby-starter-lumen</a>.
 </h4>
 
 <p align="center">
@@ -26,14 +30,15 @@
 <a target="_blank" href="https://gatsby-starter-standard-blog.netlify.app">https://gatsby-starter-standard-blog.netlify.app</a>
 
 ## Features
++ Header and Drawer by Material-UI.
++ Archive organized by tags and categories.
++ Pagination support.
++ [Netlify CMS](https://www.netlifycms.org) support.
 + [Lost Grid](http://lostgrid.org).
 + [Modern font stack](https://bitsofco.de/the-new-system-font-stack).
 + Beautiful typography inspired by [matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg).
 + Syntax highlighting in code blocks using [PrismJS](http://prismjs.com).
 + [Mobile-First](https://medium.com/@mrmrs_/mobile-first-css-48bc4cc3f60f) approach in development.
-+ Archive organized by tags and categories.
-+ Pagination support.
-+ [Netlify CMS](https://www.netlifycms.org) support.
 + Google Analytics.
 + Disqus Comments.
 + [Flow](https://flow.org/) static type checking.
