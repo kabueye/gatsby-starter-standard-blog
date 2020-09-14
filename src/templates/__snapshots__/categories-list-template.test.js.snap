@@ -5,7 +5,7 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
   className="layout"
 >
   <header
-    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorPrimary MuiPaper-elevation4"
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
   >
     <div
       className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"

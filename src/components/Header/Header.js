@@ -12,7 +12,7 @@ const Header = () => {
   const { title, menu } = useSiteMetadata();
 
   return (
-    <AppBar position="relative">
+    <AppBar position="static">
       <Toolbar>
         <Link to="/" className={styles.header__title}>
           {title}
