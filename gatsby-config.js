@@ -14,7 +14,8 @@ module.exports = {
     menu: siteConfig.menu,
     author: siteConfig.author,
     labelReadMore: siteConfig.labelReadMore,
-    labelPublished: siteConfig.labelPublished
+    labelPublished: siteConfig.labelPublished,
+    dateFormat: siteConfig.dateFormat
   },
   plugins: [
     {

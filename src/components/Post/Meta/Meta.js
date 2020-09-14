@@ -9,11 +9,11 @@ type Props = {
 };
 
 const Meta = ({ date }: Props) => {
-  const { labelPublished } = useSiteMetadata();
+  const { labelPublished, dateFormat } = useSiteMetadata();
 
   return (
     <div className={styles['meta']}>
-      <p className={styles['meta__date']}>{labelPublished} {moment(date).format('D MMM YYYY')}</p>
+      <p className={styles['meta__date']}>{labelPublished} {moment(date).format(dateFormat)}</p>
     </div>
   );
 };

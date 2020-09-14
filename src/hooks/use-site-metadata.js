@@ -41,6 +41,7 @@ const useSiteMetadata = () => {
             disqusShortname
             labelReadMore
             labelPublished
+            dateFormat
           }
         }
       }
