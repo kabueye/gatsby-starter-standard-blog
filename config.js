@@ -51,5 +51,5 @@ module.exports = {
   labelPublished: 'Published on',
   dateFormat: 'MMMM D, YYYY',
   isShowCategoriesInSidebar: true,
-  isShowTagsInSidebar: false,
+  isShowTagsInSidebar: true,
 };
