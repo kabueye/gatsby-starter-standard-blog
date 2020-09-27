@@ -15,7 +15,9 @@ module.exports = {
     author: siteConfig.author,
     labelReadMore: siteConfig.labelReadMore,
     labelPublished: siteConfig.labelPublished,
-    dateFormat: siteConfig.dateFormat
+    dateFormat: siteConfig.dateFormat,
+    isShowCategoriesInSidebar: siteConfig.isShowCategoriesInSidebar,
+    isShowTagsInSidebar: siteConfig.isShowTagsInSidebar
   },
   plugins: [
     {

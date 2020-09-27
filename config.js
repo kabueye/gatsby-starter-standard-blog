@@ -49,5 +49,7 @@ module.exports = {
   },
   labelReadMore: 'Read More',
   labelPublished: 'Published on',
-  dateFormat: 'MMMM D, YYYY'
+  dateFormat: 'MMMM D, YYYY',
+  isShowCategoriesInSidebar: true,
+  isShowTagsInSidebar: false,
 };

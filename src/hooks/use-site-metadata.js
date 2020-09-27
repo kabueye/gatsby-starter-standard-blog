@@ -42,6 +42,8 @@ const useSiteMetadata = () => {
             labelReadMore
             labelPublished
             dateFormat
+            isShowCategoriesInSidebar
+            isShowTagsInSidebar
           }
         }
       }
