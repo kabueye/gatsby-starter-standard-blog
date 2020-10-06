@@ -26,7 +26,7 @@ const Post = ({ post }: Props) => {
         <Content body={html} title={title} />
       </div>
 
-      <SocialButtons shareTitle={title} shareUrl={url + slug} />
+      <SocialButtons shareTitle={title} articleUrl={url + slug} />
 
       <div className={styles['post__footer']}>
         <Meta date={date} />

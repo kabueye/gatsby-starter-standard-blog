@@ -17,7 +17,7 @@ describe('SocialButtons', () => {
   });
 
   it('renders correctly', () => {
-    const tree = renderer.create(<SocialButtons />).toJSON();
+    const tree = renderer.create(<SocialButtons shareTitle="shareTitle" articleUrl="articleUrl" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

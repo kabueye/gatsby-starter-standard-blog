@@ -4,9 +4,7 @@ import {
   FacebookShareButton,
   FacebookIcon,
   TwitterShareButton,
-  TwitterIcon,
-  // HatenaShareButton,
-  // HatenaIcon
+  TwitterIcon
 } from 'react-share';
 import styles from './SocialButtons.module.scss';
 
@@ -15,17 +13,14 @@ type Props = {
   articleUrl: string
 };
 
-const SocialButtons = ({ shareTitle, shareUrl }: Props) => (
+const SocialButtons = ({ shareTitle, articleUrl }: Props) => (
   <div className={styles['socialButtons']}>
-    <TwitterShareButton className={styles['socialButtons__twitter']} title={`${shareTitle}\n`} url={shareUrl}>
+    <TwitterShareButton className={styles['socialButtons__twitter']} title={`${shareTitle}\n`} url={articleUrl}>
       <TwitterIcon size={32} round />
     </TwitterShareButton>
-    <FacebookShareButton className={styles['socialButtons__facebook']} url={shareUrl} quote={shareTitle}>
+    <FacebookShareButton className={styles['socialButtons__facebook']} url={articleUrl} quote={shareTitle}>
       <FacebookIcon size={32} round />
     </FacebookShareButton>
-    {/* <HatenaShareButton className={styles['socialButtons__hatena']} url={shareUrl} title={shareTitle}>
-      <HatenaIcon size={32} round />
-    </HatenaShareButton> */}
   </div>
 );
 export default SocialButtons;
