@@ -1,0 +1,13 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.socialButtons {
+    &__twitter,
+    &__facebook,
+    &__email
+    {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+}
